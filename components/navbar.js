@@ -9,7 +9,7 @@ const Navbar = () => {
           Download CV
           <div className="ml-2">
             <a href="/cv.pdf" download="cv.pdf">
-              <div className="mt-1">
+              <div className="mt-1 hover:text-white transition hover:scale-150">
                  <BsDownload />
               </div>
              
@@ -18,10 +18,12 @@ const Navbar = () => {
         </div>
 
         <div className="flex text-base">
-          <div className=" font-normal  mr-10">
-            <Link href="/skills">SKILLS</Link>
+          <div className=" font-normal transition delay-150 ease-in-out 
+          hover:scale-150 hover:text-white mr-16">
+            <Link href="/skills"> SKILLS</Link>
           </div>
-          <div className="  ">
+          <div className="  hover:text-white  transition ease-in-out 
+          hover:scale-150 ">
             <Link href="/projects">PROJECTS</Link>
           </div>
         </div>

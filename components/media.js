@@ -3,22 +3,18 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import IconButton from "./iconButton";
 
 const MediaIcons = (props) => {
-   let CleintSideWindow ;
-  useEffect(()=>{
+  let CleintSideWindow;
+  useEffect(() => {
     CleintSideWindow = window;
-       
-  },[])
-  function clienSiteWindow(){
-     
-  }
- 
+  }, []);
+  function clienSiteWindow() {}
 
   const media = {
     github: "https://github.com/AsiFmahmud10",
     linkdin: "https://www.linkedin.com/mynetwork/",
     gmail: CleintSideWindow,
-    color: 'rgba(47, 69, 84, 0.82)',
-    size: 41
+    color: "rgba(47, 69, 84, 0.82)",
+    size: 41,
   };
 
   return (
@@ -32,12 +28,9 @@ const MediaIcons = (props) => {
           <FiLinkedin size={media.size} color={media.color} title="linkdin" />
         </IconButton>
 
-      <div onClick={()=>{media.gmail.open('mailto:test@example.com')}}>
-        <Link>
-        </Link>
+        <div>
           <FiMail size={media.size} color={media.color} title="gmail" />
-      </div>
-        
+        </div>
       </div>
     </div>
   );
