@@ -3,28 +3,37 @@ import { BsDownload } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <div className="w-screen  pt-9 px-20 absolute">
+    <div className="w-screen  pt-9 md:px-20 px-4 absolute">
       <div className="flex justify-between ">
-        <div className="text-xl font-bold flex">
+        <div className="  text-lg md:text-xl font-bold flex">
           Download CV
           <div className="ml-2">
             <a href="/cv.pdf" download="cv.pdf">
               <div className="mt-1 hover:text-white transition hover:scale-150">
-                 <BsDownload />
+                <BsDownload />
               </div>
-             
             </a>
           </div>
         </div>
 
-        <div className="flex text-base">
-          <div className=" font-normal transition delay-150 ease-in-out 
-          hover:scale-150 hover:text-white mr-16">
-            <Link href="/skills"> SKILLS</Link>
+        <div className="flex md:text-lg ">
+          <div
+            className=" font-normal transition  ease-in-out 
+            md:hover:scale-110 hover:text-white md:mr-16 mr-4 "
+          >
+            <Link href="/"> Home</Link>
           </div>
-          <div className="  hover:text-white  transition ease-in-out 
-          hover:scale-150 ">
-            <Link href="/projects">PROJECTS</Link>
+          <div
+            className=" font-normal transition  ease-in-out 
+                  md:hover:scale-110 hover:text-white md:mr-16 mr-4"
+          >
+            <Link href="/skills"> Skills</Link>
+          </div>
+          <div
+            className="  hover:text-white  transition ease-in-out 
+                  md:hover:scale-110 "
+          >
+            <Link href="/projects">Projects</Link>
           </div>
         </div>
       </div>

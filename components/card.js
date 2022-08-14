@@ -1,18 +1,29 @@
 import { BsFillCameraVideoOffFill } from "react-icons/bs";
-
+import Image from 'next/image'
 const Card = ({data,link,width,height}) => {
+     const {title, tech,id} = data; 
     return ( 
         <>   
-        <div className={` shadow-sm hover:shadow-md shadow-gray-600 hover:shadow-green-600 text-white rounded-md ${width} ${height} `}>
-            <hr></hr>
-            <section>
-                 <h2 className="text-black">{data.title}</h2>
-                 <div className="">{data.tech}</div>
+        <div className={` shadow-sm border-2  hover:shadow-md text-gray-600 font-bold hover:shadow-gray-600 rounded-md p-3 `}>
+            <Image src={`/p${id}.jpg`} alt="pet" width={410} height={280} />
+            
+            <section className="">
+                 <h2 className="text-xl text-center">
+                    {title}
+                 </h2>
+                 <div className="text-large pr-3">
+                     {tech.map((items)=>(
+                        <div key={items}>{items}</div>
+                    ))} 
+                
+                 </div>
                   
-                  < BsFillCameraVideoOffFill/>
-                  < BsFillCameraVideoOffFill/>
-
+                  <div className="flex justify-between p-5 ">
+                        < BsFillCameraVideoOffFill/>
+                        < BsFillCameraVideoOffFill/>
+                  </div>
             </section>
+
         </div>
             
         </>

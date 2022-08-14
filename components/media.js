@@ -3,12 +3,7 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import IconButton from "./iconButton";
 
 const MediaIcons = (props) => {
-  let CleintSideWindow;
-  useEffect(() => {
-    CleintSideWindow = window;
-  }, []);
-  function clienSiteWindow() {}
-
+  
   const media = {
     github: "https://github.com/AsiFmahmud10",
     linkdin: "https://www.linkedin.com/mynetwork/",
@@ -18,18 +13,31 @@ const MediaIcons = (props) => {
   };
 
   return (
-    <div className="absolute media   ">
+    <div className="absolute media">
       <div className="flex  ">
-        <IconButton url={media.github}>
-          <FiGithub size={media.size} color={media.color} title="github" />
-        </IconButton>
-
-        <IconButton url={media.linkdin}>
-          <FiLinkedin size={media.size} color={media.color} title="linkdin" />
-        </IconButton>
-
-        <div>
-          <FiMail size={media.size} color={media.color} title="gmail" />
+        <div
+          className=" text-stone-700 dark:text-white
+         "
+        >
+          <IconButton url={media.github}>
+            <FiGithub size={media.size} title="github" />
+          </IconButton>
+        </div>
+        <div
+          className=" text-stone-700  dark:text-white
+         "
+        >
+          <IconButton url={media.linkdin} className="text-dark">
+            <FiLinkedin size={media.size} title="linkdin" />
+          </IconButton>
+        </div>
+        <div
+          className="  text-stone-700 dark:text-white
+         "
+        >
+          <IconButton url={media.github} className="dark:hover:text-orange-400">
+            <FiMail size={media.size} title="gmail" />
+          </IconButton>
         </div>
       </div>
     </div>
