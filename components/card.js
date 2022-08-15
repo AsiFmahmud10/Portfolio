@@ -1,26 +1,32 @@
-import { BsFillCameraVideoOffFill } from "react-icons/bs";
+import { FiGithub } from "react-icons/fi";
+import { MdOutlineLiveTv } from "react-icons/md";
 import Image from 'next/image'
 const Card = ({data,link,width,height}) => {
      const {title, tech,id} = data; 
     return ( 
         <>   
-        <div className={` shadow-sm border-2  hover:shadow-md text-gray-600 font-bold hover:shadow-gray-600 rounded-md p-3 `}>
-            <Image src={`/p${id}.jpg`} alt="pet" width={410} height={280} />
+        <div className={`skill-card `}>
+            <Image className="rounded-lg" src={`/p${id}.jpg`} alt="pet" width={410} height={280} />
             
             <section className="">
                  <h2 className="text-xl text-center">
                     {title}
                  </h2>
-                 <div className="text-large pr-3">
+                 <div className="text-large pr-3 pt-3 text-center">
                      {tech.map((items)=>(
-                        <div key={items}>{items}</div>
+                        <button className=" skill-card-btn " key={items}>
+                           # {items}
+                        </button>
                     ))} 
                 
                  </div>
                   
                   <div className="flex justify-between p-5 ">
-                        < BsFillCameraVideoOffFill/>
-                        < BsFillCameraVideoOffFill/>
+                    <button className="skill-card-Iconbtn"> <MdOutlineLiveTv size={26}/></button>
+                    <button className="skill-card-Iconbtn"> <FiGithub size={26} title="github" />
+                  </button>          
+                            
+                        
                   </div>
             </section>
 

@@ -9,7 +9,8 @@ const Home = () => {
        <meta content="Asif's portfolio" />
        <link rel="icon" href=""/>
     </Head>
-    <div className=" gradientgreen dark:bg-gradient-to-r from-start to-end  w-screen h-screen">
+
+    <div className=" gradientgreen dark:bg-gradient-to-r from-start to-end  w-screen   h-screen">
       <HomeTitle />
       <MediaIcons/>
     </div>

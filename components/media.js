@@ -7,7 +7,7 @@ const MediaIcons = (props) => {
   const media = {
     github: "https://github.com/AsiFmahmud10",
     linkdin: "https://www.linkedin.com/mynetwork/",
-    gmail: CleintSideWindow,
+    gmail: 'CleintSideWindow',
     color: "rgba(47, 69, 84, 0.82)",
     size: 41,
   };

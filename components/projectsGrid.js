@@ -15,7 +15,7 @@ const Projects = () => {
 
   return (
     <>
-        <div className="grid bg-white md:grid-cols-2 lg:grid-cols-3 gap-12 px-10 lg:px-24 pt-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 px-10 lg:px-24 pt-10">
             {data.map((value) => (
                 <div key={value.id} >
                     <Card  data={value} className="h-" />
