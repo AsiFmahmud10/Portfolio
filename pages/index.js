@@ -1,5 +1,6 @@
 import {HomeTitle,MediaIcons} from "../components/componentsPath";
 import Head from "next/head"
+import Image from 'next/image'
 
 const Home = () => {
   return (
@@ -12,6 +13,11 @@ const Home = () => {
 
     <div className=" gradientgreen dark:bg-gradient-to-r from-start to-end  w-screen   h-screen">
       <HomeTitle />
+{/* 
+      <div className="absolute top-28 right-3 rounded-full border-2 ">
+          <Image className="rounded-lg" src={`/asif_photo.png`} alt="pet" height={415}  width="601"/>
+      </div> */}
+   
       <MediaIcons/>
     </div>
     </>
