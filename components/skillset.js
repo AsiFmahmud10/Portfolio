@@ -60,10 +60,10 @@ const SkillSets = () => {
           </div>
         </div>
 
-        <p className=" text-xl font-bold p-4 mt-8"> Language: </p>
+        <p className=" text-xl font-bold p-4  mt-8"> Language: </p>
         {
            language.map((lan) => (
-          <li key={lan}> {lan} </li>
+          <li className=" ml-7" key={lan}> {lan} </li>
           ))
         }
       </div>

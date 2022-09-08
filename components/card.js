@@ -2,11 +2,11 @@ import { FiGithub } from "react-icons/fi";
 import { MdOutlineLiveTv } from "react-icons/md";
 import Image from 'next/image'
 const Card = ({data,link,width,height}) => {
-     const {title, tech,id} = data; 
+     const {title, tech,id,imgSrc} = data; 
     return ( 
         <>   
         <div className={`skill-card `}>
-            <Image className="rounded-lg" src={`/p${id}.jpg`} alt="pet" width={410} height={280} />
+            <Image className="rounded-lg" src={imgSrc} alt="pet" width={410} height={280} />
             
             <section className="">
                  <h2 className="text-xl text-center">
