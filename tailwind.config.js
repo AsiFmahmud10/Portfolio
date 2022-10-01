@@ -16,6 +16,19 @@ module.exports = {
         mdl: "#02386E",
         glass: "#1e293b",
       },
+      animation:{
+        loadOpacity:'loadOpacity 1s linear infinite'
+      },
+      Keyframes:{
+        loadOpacity:{
+          '0%, 50%':{
+            opacity:0
+          },
+          '100%':{
+            opacity:1
+          }
+        }
+      }
     },
   },
   plugins: [],

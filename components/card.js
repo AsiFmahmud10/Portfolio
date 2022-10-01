@@ -1,8 +1,31 @@
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineLiveTv } from "react-icons/md";
+import { BsCameraVideo } from "react-icons/bs";
+
 import Image from 'next/image'
+import Link from 'next/link'
+
 const Card = ({data,link,width,height}) => {
-     const {title, tech,id,imgSrc} = data; 
+     const {title, tech,id,imgSrc,live,gitLink,showProject} = data; 
+     console.log(data)
+     const buttonIcons = [
+      {  
+         name:'live',
+         link:live,
+         icon:MdOutlineLiveTv
+      },
+      {  
+         name:'git',
+         link:gitLink,
+         icon:FiGithub
+      },
+      {  
+         name:'video',
+         link:showProject,
+         icon:BsCameraVideo
+      }
+
+   ]
     return ( 
         <>   
         <div className={`skill-card `}>
@@ -22,9 +45,19 @@ const Card = ({data,link,width,height}) => {
                  </div>
                   
                   <div className="flex justify-between p-5 ">
-                    <button className="skill-card-Iconbtn"> <MdOutlineLiveTv size={26}/></button>
-                    <button className="skill-card-Iconbtn"> <FiGithub size={26} title="github" />
-                  </button>          
+                    {/* <Link href={}></Link>  */}
+                    {
+                        buttonIcons.map((Btn,index)=>(
+                        <Link key={index} href={ Btn?.link ? Btn?.link :'' }>
+                           <div className="group">
+                              <button  className=" relative skill-card-Iconbtn">
+                                 <Btn.icon size={26}/>
+                              </button>
+                              <div className="hidden absolute text-red-500 group-hover:block text-center pl-6 pr-5 ">{Btn.name}</div>
+                           </div>
+                        </Link> 
+                        ))    
+                    }
                             
                         
                   </div>

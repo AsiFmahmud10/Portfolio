@@ -1,14 +1,13 @@
-import {HomeTitle,MediaIcons} from "../components/componentsPath";
+import {HomeTitle,MediaIcons} from "../components";
 import Head from "next/head"
-import Image from 'next/image'
 
 const Home = () => {
   return (
     <>
     <Head>
       <title> PORTFOLIO </title>
-       <meta content="Asif's portfolio" />
-       <link rel="icon" href=""/>
+      <meta content="Asif's portfolio" />
+      <link rel="icon" href=""/>
     </Head>
 
     <div className=" gradientgreen dark:bg-gradient-to-r from-start to-end  w-screen   h-screen">
