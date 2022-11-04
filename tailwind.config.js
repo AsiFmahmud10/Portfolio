@@ -1,3 +1,5 @@
+const { transform } = require('typescript');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
@@ -16,19 +18,22 @@ module.exports = {
         mdl: "#02386E",
         glass: "#1e293b",
       },
-      animation:{
-        loadOpacity:'loadOpacity 1s linear infinite'
-      },
+     
       Keyframes:{
-        loadOpacity:{
-          '0%, 50%':{
-            opacity:0
+        'fade':{
+          'from':{
+            opacity:'0',
+            transform : 'translateY(100px)'
           },
-          '100%':{
-            opacity:1
+          'to':{
+            opacity:'1',
+            transform: 'translateY(0px)'
           }
         }
-      }
+      },
+      animation:{
+        'fade':'fade 1s ease-out'
+      },
     },
   },
   plugins: [],

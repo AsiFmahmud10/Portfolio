@@ -32,9 +32,9 @@ const SkillSets = () => {
     <>
       <div className="p-4">
         <p className=" text-2xl font-bold p-4 my-8"> Comfortable with : </p>
-        <div className="  flex justify-start gap-7   ">
+        <div className="flex flex-wrap gap-6 lg:gap-10 ">
           {infoAboutMe.comfortableWith.map((value) => (
-            <div key={value.title} className=" border px-2 rounded-xl dark:bg-dark-grid bg-gray-50  w-24 hover:drop-shadow-lg ">
+            <div key={value.title} className="comp-skillset-Image ">
               <Image
                 {...imageSize}
                 src={`/skillPic/${value.title}.png`}
@@ -47,9 +47,9 @@ const SkillSets = () => {
         <div>
           <p className=" text-xl font-bold p-4 my-8"> Familiar with : </p>
 
-          <div className=" flex justify-start gap-7">
+          <div className=" flex flex-wrap gap-6 lg:gap-10">
             { familiarWith.map((value) => (
-              <span key={value.title} className="border px-2 rounded-xl dark:bg-dark-grid bg-gray-50  w-24 hover:drop-shadow-lg">
+              <span key={value.title} className="comp-skillset-Image">
                 <Image 
                   src={`/skillPic/${value.title}.png`}
                   {...imageSize}
@@ -63,7 +63,7 @@ const SkillSets = () => {
         <p className=" text-xl font-bold p-4  mt-8"> Language: </p>
         {
            languages.map((language) => (
-          <li className=" ml-7" key={language}> {language} </li>
+          <li className=" skillset-comp-txt ml-7" key={language}> {language} </li>
           ))
         }
 
@@ -72,10 +72,8 @@ const SkillSets = () => {
           <div>
             <div className=" text-xl font-extrabold mt-8 "> University: </div> 
             <div className="p-4">
-              <div>
-                  
-              </div>
-              <div className=" text-xl font-light">
+              
+              <div className=" skillset-comp-txt">
                   Currently studing cse at khulna university
               </div> 
             </div>      
@@ -86,8 +84,8 @@ const SkillSets = () => {
           <div>
             <div className=" text-xl font-bold mt-8 "> College: </div> 
             <div className="p-4">
-              <div className=" text-xl font-light"> { college?.name} </div> 
-              <div className=" text-xl font-light"> { college?.gpa} </div>         
+              <div className=" skillset-comp-txt"> { college?.name} </div> 
+              <div className="skillset-comp-txt"> { college?.gpa} </div>         
             </div>      
           </div>
               {/* school */}
@@ -95,8 +93,8 @@ const SkillSets = () => {
 
             <div className=" text-xl font-bold mt-8 animate-loadOpacity "> School: </div> 
             <div className="p-4">
-              <div className=" text-xl font-light"> { school?.name} </div> 
-              <div className=" text-xl font-light"> { school?.gpa} </div>         
+              <div className=" skillset-comp-txt"> { school?.name} </div> 
+              <div className=" skillset-comp-txt"> { school?.gpa} </div>         
             </div>      
           
           </div>

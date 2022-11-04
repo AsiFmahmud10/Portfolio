@@ -64,6 +64,14 @@ a {
 }
 .skill-card-Iconbtn{
  @apply border-2 rounded-full hover:shadow-sm
- hover:text-blue-900 px-5 py-2  hover:border-blue-900 
+ hover:text-[#080161] px-5 py-2  hover:border-[#00040d]
+ 
 
+}
+
+.skillset-comp-txt{
+  @apply sm:text-lg font-light
+}
+.comp-skillset-Image{
+  @apply border px-2 rounded-xl dark:bg-dark-grid bg-gray-50  w-24 hover:drop-shadow-lg
 }

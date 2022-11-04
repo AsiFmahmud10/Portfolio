@@ -61,11 +61,10 @@ const Projects = () => {
 
   return (
     <>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 px-10 lg:px-24 pt-10">
+        <div className=" justify-center grid md:grid-cols-2 lg:grid-cols-3 gap-7  px-10 md:px-24 pt-10">
             {data.map((value) => (
                 <div key={value.id} >
-                    <Card  data={value} className="h-" />
-
+                    <Card  data={value} className="" />
                 </div>
         ))}
         </div>

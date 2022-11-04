@@ -1,12 +1,26 @@
 import Link from "next/Link";
 import { BsDownload } from "react-icons/bs";
+import {useTheme} from 'next-themes'
+import {BsSun} from 'react-icons/bs'
+import {GiNightSky} from 'react-icons/gi'
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const {theme,setTheme} = useTheme()
+  const [isDark,setIsDark] = useState(false)
+  useEffect(()=>{
+    if(theme === 'dark')
+      setIsDark(true)
+    else
+      setIsDark(false)
+
+  },[theme,setTheme])
+
   return (
     <div className="w-screen  pt-9 md:px-20 px-4 absolute">
       <div className="flex justify-between ">
         <div className="  text-lg md:text-xl font-bold flex">
-          Download CV
+          <span className="hidden md:block ">Download</span> CV
           <div className="ml-2">
             <a href="/cv.pdf" download="cv.pdf">
               <div className="mt-1 hover:text-white transition hover:scale-150">
@@ -16,11 +30,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex md:text-lg ">
-          <div
-            className=" font-normal transition  ease-in-out 
-            md:hover:scale-110 hover:text-white md:mr-16 mr-4 "
-          >
+        <div className="flex md:text-lg items-center ">
+          <div className=" font-normal transition ease-in-out md:hover:scale-110 hover:text-white    md:mr-16 mr-4 ">
             <Link href="/"> Home</Link>
           </div>
           <div
@@ -29,12 +40,21 @@ const Navbar = () => {
           >
             <Link href="/skills"> Skills</Link>
           </div>
-          <div
-            className="  hover:text-white  transition ease-in-out 
-                  md:hover:scale-110 "
+          <div className=" hover:text-white  transition ease-in-out md:hover:scale-110 "
           >
             <Link href="/projects">Projects</Link>
           </div>
+            {/* button */}
+            <div className="  font-normal transition  ease-in-out 
+                  md:hover:scale-125 hover:text-white md:mr-16 ml-5"
+          >  
+            
+            <button onClick={()=>{setTheme(theme === 'dark' ? 'light':'dark')}}>
+              { isDark ? <BsSun size={21} /> : <GiNightSky size={21}/>} 
+            </button>
+          
+          </div>
+          
         </div>
       </div>
     </div>

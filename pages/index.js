@@ -2,12 +2,13 @@ import {HomeTitle,MediaIcons} from "../components";
 import Head from "next/head"
 
 const Home = () => {
+  console.log(`rendering Home page`)
   return (
     <>
     <Head>
-      <title> PORTFOLIO </title>
+      <title > PORTFOLIO </title>
       <meta content="Asif's portfolio" />
-      <link rel="icon" href=""/>
+      <link rel="icon" href="/"/>
     </Head>
 
     <div className=" gradientgreen dark:bg-gradient-to-r from-start to-end  w-screen   h-screen">

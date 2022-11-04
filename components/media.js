@@ -7,7 +7,7 @@ const MediaIcons = (props) => {
   const media = {
     github: "https://github.com/AsiFmahmud10",
     linkdin: "https://www.linkedin.com/mynetwork/",
-    gmail: 'CleintSideWindow',
+    gmail: 'mailto:mhamudasif2@gmail.com',
     color: "rgba(47, 69, 84, 0.82)",
     size: 41,
   };
@@ -35,7 +35,7 @@ const MediaIcons = (props) => {
           className="  text-stone-700 dark:text-white
          "
         >
-          <IconButton url={media.github} className="dark:hover:text-orange-400">
+          <IconButton url={media.gmail} className="dark:hover:text-orange-400">
             <FiMail size={media.size} title="gmail" />
           </IconButton>
         </div>

@@ -28,41 +28,44 @@ const Card = ({data,link,width,height}) => {
    ]
     return ( 
         <>   
-        <div className={`skill-card `}>
+        <div className={`skill-card max-w-[480px] `}>
             <Image className="rounded-lg" src={imgSrc} alt="pet" width={410} height={280} />
-            
-            <section className="">
-                 <h2 className="text-xl text-center">
-                    {title}
-                 </h2>
-                 <div className="text-large pr-3 pt-3 text-center">
-                     {tech.map((items)=>(
-                        <button className=" skill-card-btn " key={items}>
-                           # {items}
-                        </button>
-                    ))} 
-                
-                 </div>
-                  
-                  <div className="flex justify-between p-5 ">
-                    {/* <Link href={}></Link>  */}
-                    {
-                        buttonIcons.map((Btn,index)=>(
-                        <Link key={index} href={ Btn?.link ? Btn?.link :'' }>
-                           <div className="group">
-                              <button  className=" relative skill-card-Iconbtn">
-                                 <Btn.icon size={26}/>
-                              </button>
-                              <div className="hidden absolute text-red-500 group-hover:block text-center pl-6 pr-5 ">{Btn.name}</div>
-                           </div>
-                        </Link> 
-                        ))    
-                    }
-                            
+            <div className=" h-[250px]">
+                  <section className="">
+                     <h2 className="text-xl text-center">
+                        {title}
+                     </h2>
+                     <div className="text-md text-center h-[111px;]">
+                           {
+                              tech.map((items)=>(
+                                 <button className=" skill-card-btn " key={items}>
+                                    # {items}
+                                 </button>     
+                                 )
+                              )
+                           } 
+                     
+                     </div>
                         
-                  </div>
-            </section>
-
+                        <div className="flex justify-between p-5 ">
+                        {
+                              buttonIcons.map((Btn,index)=>(
+                              <Link key={index} href={ Btn?.link ? Btn.link :'' }>
+                                 <div className="group">
+                                    <button  className=" relative skill-card-Iconbtn">
+                                       <Btn.icon size={26}/>
+                                    </button>
+                                    <div className="hidden absolute text-red-500 group-hover:block text-center pl-6 pr-5 ">{Btn.name}</div>
+                                 </div>
+                              </Link> 
+                              ))    
+                        }
+                                 
+                              
+                        </div>
+                  </section>
+            </div>
+            
         </div>
             
         </>
