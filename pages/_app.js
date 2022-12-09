@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Navbar from "../components";
+import {Navbar} from "../components";
 import { ThemeProvider } from 'next-themes'
 
 function MyApp({ Component, pageProps }) {

@@ -1,4 +1,4 @@
-import SkillSets from "../components/skillset";
+import {SkillSets }from "../components";
 
 const Projects = () => {
   return (
