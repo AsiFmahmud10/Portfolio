@@ -1,5 +1,5 @@
 import Card from "./card"
-import HomeTitle from "./HomeTitle";
+import HomeTitle from "./homeTitle";
 import IconButton from "./iconButton";
 import MediaIcons from "./mediaIcons";
 import Navbar from "./navbar";
