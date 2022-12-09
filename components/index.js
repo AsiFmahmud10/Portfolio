@@ -1,11 +1,15 @@
-export * from './card.js'
-export * from './componentsPath'
-export * from './homeTitle'
-export * from './iconButton'
-export * from './media'
-export * from './navbar'
-export * from './projectsGrid'
-export * from './skillset'
-
+import Card from "./card"
+import HomeTitle from "./HomeTitle";
+import IconButton from "./iconButton";
+import MediaIcons from "./mediaIcons";
+import Navbar from "./navbar";
+import ProjectsGrid from "./card"
+import SkillSets from './skillset'
+ 
+export {
+    Card,HomeTitle,IconButton,MediaIcons,
+    Navbar,ProjectsGrid,
+    SkillSets
+};
 
 

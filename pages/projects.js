@@ -8,10 +8,7 @@ const Projects = () => {
         <div className="gradientgreen dark:bg-gradient-to-r from-end via-blue-900 to-black h-20 shadow-lg ">
         
         </div>
-           
            <SkillSets/>
-
-
       </div>
     </>
   );

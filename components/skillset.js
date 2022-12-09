@@ -26,7 +26,11 @@ const SkillSets = () => {
     },
   };
 
-  const {school,college,languages,imageSize,comfortableWith,familiarWith} = infoAboutMe
+  const {
+    school,college,
+    languages,imageSize,
+    comfortableWith,familiarWith
+  } = infoAboutMe
 
   return (
     <>
@@ -99,14 +103,8 @@ const SkillSets = () => {
           
           </div>
         </div>
-
-
-
-
       </div>
-         
-
-
+     
     </>
   );
 };

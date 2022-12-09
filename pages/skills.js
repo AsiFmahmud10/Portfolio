@@ -1,4 +1,4 @@
-import Projects from "../components/projectsGrid";
+import Projects from "./projects";
 
 const SkillPage = () => {
   return (

@@ -1,6 +1,6 @@
 import Card from "./card";
 
-const Projects = () => {
+const ProjectsGrid = () => {
 
   const data = [
     { 
@@ -73,4 +73,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsGrid;

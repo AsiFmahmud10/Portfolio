@@ -1,13 +1,14 @@
-import Link from "next/Link";
-import { BsDownload } from "react-icons/bs";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import {useTheme} from 'next-themes'
+import { BsDownload } from "react-icons/bs";
 import {BsSun} from 'react-icons/bs'
 import {GiNightSky} from 'react-icons/gi'
-import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const {theme,setTheme} = useTheme()
   const [isDark,setIsDark] = useState(false)
+  
   useEffect(()=>{
     if(theme === 'dark')
       setIsDark(true)

@@ -1,5 +1,5 @@
-import {HomeTitle,MediaIcons} from "../components";
 import Head from "next/head"
+import {HomeTitle,MediaIcons} from "../components";
 
 const Home = () => {
   console.log(`rendering Home page`)

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import IconButton from "./iconButton";
 

@@ -1,11 +1,11 @@
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineLiveTv } from "react-icons/md";
 import { BsCameraVideo } from "react-icons/bs";
-
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Card = ({data,link,width,height}) => {
+    
      const {title, tech,id,imgSrc,live,gitLink,showProject} = data; 
      console.log(data)
      const buttonIcons = [
