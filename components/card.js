@@ -29,7 +29,7 @@ const Card = ({data,link,width,height}) => {
     return ( 
         <>   
         <div className={`skill-card max-w-[480px] `}>
-            <Image className="rounded-lg" src={imgSrc} alt="pet" width={410} height={280} />
+            <Image className="rounded-lg" src={imgSrc} alt="pet" width={410} height={280} priority={true} />
             <div className=" h-[250px]">
                   <section className="">
                      <h2 className="text-xl text-center">
