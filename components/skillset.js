@@ -9,6 +9,7 @@ const SkillSets = () => {
       { title: "sql" },
       { title: "firebase" },
       { title: "next" },
+      {title:"php"}
     ],
     familiarWith: [{ title: "typescript" }, { title: "vue" }],
 

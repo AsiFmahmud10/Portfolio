@@ -4,20 +4,20 @@ const ProjectsGrid = () => {
 
   const data = [
     { 
-       id: 1,
-       title:"Image share",
-       tech:['react',"framer-motion",'firebase'],
-       imgSrc:"/projectPic/image.png",
-       live:"https://lnkd.in/g7Uq6ue",
-       gitLink:"https://github.com/AsiFmahmud10/CORE-base-social-site-",
-       showProject:"https://www.linkedin.com/posts/asif-mahmud-bb67581b3_react-firebase-please-activity-6798134620601892864-kwtd?utm_source=share&utm_medium=member_desktop"  
-    },
-    {   
-        id: 2,title:"APP : HISAB RAKHI(Group Project) ",
-        tech:['flutter','hive'], 
-        imgSrc:"/projectPic/hisab.png",
-        gitLink:"https://github.com/AsiFmahmud10/3.1-Project_HISAB_RAKHI",
-        showProject:"https://www.linkedin.com/posts/asif-mahmud-bb67581b3_flutter-hive-activity-6928676392280748032-X8tQ?utm_source=share&utm_medium=member_desktop"
+      id: 7,
+      title:"Portfolio",
+      tech:['next js',"tailwindcss"],
+      imgSrc:"/projectPic/portfolio.png",
+      live:"https://portfolio-nine-blue-57.vercel.app/",
+      gitLink:"https://github.com/AsiFmahmud10/Portfolio",
+      showProject:""  
+   },
+   {   
+     id: 2,title:"APP : HISAB RAKHI(Group Project) ",
+     tech:['flutter','hive'], 
+     imgSrc:"/projectPic/hisab.png",
+     gitLink:"https://github.com/AsiFmahmud10/3.1-Project_HISAB_RAKHI",
+     showProject:"https://www.linkedin.com/posts/asif-mahmud-bb67581b3_flutter-hive-activity-6928676392280748032-X8tQ?utm_source=share&utm_medium=member_desktop"
     },
     { 
       id: 3,
@@ -56,9 +56,18 @@ const ProjectsGrid = () => {
       showProject : "https://www.linkedin.com/posts/asif-mahmud-bb67581b3_reactionabrtimer-activity-6769626253164204032-R4KF?utm_source=share&utm_medium=member_desktop",
     },
     
-   
+    { 
+       id: 1,
+       title:"Image share",
+       tech:['react',"framer-motion",'firebase'],
+       imgSrc:"/projectPic/image.png",
+       live:"https://lnkd.in/g7Uq6ue",
+       gitLink:"https://github.com/AsiFmahmud10/CORE-base-social-site-",
+       showProject:"https://www.linkedin.com/posts/asif-mahmud-bb67581b3_react-firebase-please-activity-6798134620601892864-kwtd?utm_source=share&utm_medium=member_desktop"  
+    },
+    
   ];
-
+  
   return (
     <>
         <div className=" justify-center grid md:grid-cols-2 lg:grid-cols-3 gap-7  px-10 md:px-24 pt-10">
