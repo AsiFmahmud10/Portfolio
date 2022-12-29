@@ -3,7 +3,7 @@ import IconButton from "./iconButton";
 
 const MediaIcons = (props) => {
   
-  const media = {
+  const contactMedia = {
     github: "https://github.com/AsiFmahmud10",
     linkdin: "https://www.linkedin.com/mynetwork/",
     gmail: 'mailto:mhamudasif2@gmail.com',
@@ -14,28 +14,25 @@ const MediaIcons = (props) => {
   return (
     <div className="absolute media">
       <div className="flex  ">
-        <div
-          className=" text-stone-700 dark:text-white
-         "
-        >
-          <IconButton url={media.github}>
-            <FiGithub size={media.size} title="github" />
+        <div className=" ">
+          <IconButton url={contactMedia.github}>
+            <FiGithub size={contactMedia.size} title="github"  />
           </IconButton>
         </div>
         <div
           className=" text-stone-700  dark:text-white
          "
         >
-          <IconButton url={media.linkdin} className="text-dark">
-            <FiLinkedin size={media.size} title="linkdin" />
+          <IconButton url={contactMedia.linkdin} className="text-dark">
+            <FiLinkedin size={contactMedia.size} title="linkdin" />
           </IconButton>
         </div>
         <div
           className="  text-stone-700 dark:text-white
          "
         >
-          <IconButton url={media.gmail} className="dark:hover:text-orange-400">
-            <FiMail size={media.size} title="gmail" />
+          <IconButton url={contactMedia.gmail} >
+            <FiMail  size={contactMedia.size} title="gmail" />
           </IconButton>
         </div>
       </div>

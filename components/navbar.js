@@ -39,11 +39,11 @@ const Navbar = () => {
             className=" font-normal transition  ease-in-out 
                   md:hover:scale-110 hover:text-white md:mr-16 mr-4"
           >
-            <Link href="/skills"> Skills</Link>
+            <Link href="/projects"> Skills</Link>
           </div>
           <div className=" hover:text-white  transition ease-in-out md:hover:scale-110 "
           >
-            <Link href="/projects">Projects</Link>
+            <Link href="/skills">Projects</Link>
           </div>
             {/* button */}
             <div className="  font-normal transition  ease-in-out 
