@@ -59,12 +59,12 @@ a {
 }
 
 .skill-card-btn{
-  @apply p-2  m-2  border rounded-full hover:shadow-sm
-  hover:text-blue-900  hover:border-blue-900
+  @apply p-2  m-2  border dark:border-gray-100 dark:hover:border-white rounded-full hover:shadow-sm
+  hover:text-blue-900  hover:border-blue-900  
 }
 .skill-card-Iconbtn{
  @apply border-2 rounded-full hover:shadow-sm
- hover:text-[#080161] px-5 py-2  hover:border-[#00040d]
+ hover:text-[#080161] px-5 py-2  hover:border-[#00040d] dark:hover:border-white 
  
 
 }
