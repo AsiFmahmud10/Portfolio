@@ -23,7 +23,7 @@ const ProjectsGrid = () => {
       id: 3,
       title:"Live_chatroom",
       tech:['vue','firebase'],
-      imgSrc:"/projectPic/image.png",
+      imgSrc:"/projectPic/chatapp.png",
       live :"",
       gitLink :"https://lnkd.in/gND9R-7",
       showProject : "https://www.linkedin.com/posts/asif-mahmud-bb67581b3_liveabrchatroom-activity-6768166163819180032-NLiT?utm_source=share&utm_medium=member_desktop",

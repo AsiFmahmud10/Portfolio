@@ -5,7 +5,7 @@ const MediaIcons = (props) => {
   
   const contactMedia = {
     github: "https://github.com/AsiFmahmud10",
-    linkdin: "https://www.linkedin.com/mynetwork/",
+    linkdin: "https://www.linkedin.com/in/asif-mahmud-bb67581b3/",
     gmail: 'mailto:mhamudasif2@gmail.com',
     color: "rgba(47, 69, 84, 0.82)",
     size: 41,
