@@ -5,8 +5,7 @@ const HomeTitle = () => {
         Hey, I am Asif Mahmud
         <div className="lg:text-3xl sm:text-2xl dark:text-white ">
           web-devloper <br></br>
-          currently studing cse at khulna university
-          
+          Graduate from CSE at Khulna University
         </div>
       </div>
     </div>
