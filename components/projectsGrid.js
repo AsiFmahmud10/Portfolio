@@ -4,6 +4,15 @@ const ProjectsGrid = () => {
 
   const data = [
     { 
+      id: 2,
+      title:"Rest Api using Spring Boot",
+      tech:['Spring Boot',"Data jpa","H2 database"],
+      imgSrc:"/projectPic/restpi.png",
+      live:"",
+      gitLink:"https://github.com/AsiFmahmud10/restapi-springBoot",
+      showProject:""  
+   },
+    { 
       id: 7,
       title:"Portfolio",
       tech:['next js',"tailwindcss"],

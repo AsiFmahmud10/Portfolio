@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="  text-lg md:text-xl font-bold flex">
           <span className="hidden md:block ">Download</span> CV
           <div className="ml-2">
-            <a href="/cv.pdf" download="cv.pdf">
+            <a href="file/AsifMahmud.CV.pdf" download="Asif_Mahmud.CV.pdf">
               <div className="mt-1 hover:text-white transition hover:scale-150">
                 <BsDownload />
               </div>
