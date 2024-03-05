@@ -8,7 +8,7 @@ const ProjectsGrid = () => {
       title:"Rest Api using Spring Boot",
       tech:['Spring Boot',"Data jpa","H2 database"],
       imgSrc:"/projectPic/restpi.png",
-      live:"",
+      live:null,
       gitLink:"https://github.com/AsiFmahmud10/restapi-springBoot",
       showProject:""  
    },
@@ -19,7 +19,7 @@ const ProjectsGrid = () => {
       imgSrc:"/projectPic/portfolio.png",
       live:"https://portfolio-nine-blue-57.vercel.app/",
       gitLink:"https://github.com/AsiFmahmud10/Portfolio",
-      showProject:""  
+      showProject:null  
    },
    {   
      id: 2,title:"APP : HISAB RAKHI(Group Project) ",
@@ -33,7 +33,7 @@ const ProjectsGrid = () => {
       title:"Live_chatroom",
       tech:['vue','firebase'],
       imgSrc:"/projectPic/chatapp.png",
-      live :"",
+      live :null,
       gitLink :"https://lnkd.in/gND9R-7",
       showProject : "https://www.linkedin.com/posts/asif-mahmud-bb67581b3_liveabrchatroom-activity-6768166163819180032-NLiT?utm_source=share&utm_medium=member_desktop",
     },

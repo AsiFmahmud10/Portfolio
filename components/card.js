@@ -35,6 +35,7 @@ const Card = ({data,link,width,height}) => {
                      <h2 className="text-xl text-center">
                         {title}
                      </h2>
+                     {/* technologies used */}
                      <div className="text-md text-center h-[111px;]">
                            {
                               tech.map((items)=>(
@@ -49,16 +50,21 @@ const Card = ({data,link,width,height}) => {
                         
                         <div className="flex justify-between p-5 ">
                         {
-                              buttonIcons.map((Btn,index)=>(
-                              <Link key={index} href={ Btn?.link ? Btn.link :'' }>
-                                 <div className="group">
-                                    <button  className=" relative dark:hover:text-orange-300 skill-card-Iconbtn">
-                                       <Btn.icon size={26}/>
-                                    </button>
-                                    <div className="hidden absolute dark:text-white text-red-500 group-hover:block text-center pl-6 pr-5 ">{Btn.name}</div>
-                                 </div>
-                              </Link> 
-                              ))    
+                              buttonIcons.map((Btn,index)=>{
+                                 if(Btn.link != null){
+                                    return (
+                                       <Link key={index} href={ Btn?.link ? Btn.link :'' }>
+                                          <div className="group">
+                                             <button  className=" relative dark:hover:text-orange-300 skill-card-Iconbtn">
+                                                <Btn.icon size={26}/>
+                                             </button>
+                                             <div className="hidden absolute dark:text-white text-red-500 group-hover:block text-center pl-6 pr-5 ">{Btn.name}</div>
+                                          </div>
+                                       </Link> 
+                                       ) 
+                                 }
+                                 
+                              })    
                         }
                                  
                               
